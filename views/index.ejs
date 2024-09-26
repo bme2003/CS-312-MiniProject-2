@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalized Joke Generator</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/styles.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="card shadow-lg">
+            <div class="card-body text-center">
+                <h1 class="display-4 text-primary">Get a Personalized Joke</h1>
+                <form action="/result" method="get" class="mt-4">
+                    <div class="form-group">
+                        <label for="name" class="h5">Enter your name:</label>
+                        <input type="text" id="name" name="name" class="form-control" placeholder="Type your name here" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="category" class="h5">Select a Joke Category:</label>
+                        <select id="category" name="category" class="form-control">
+                            <option value="Any">Any</option>
+                            <option value="Programming">Programming</option>
+                            <option value="Miscellaneous">Miscellaneous</option>
+                            <option value="Pun">Pun</option>
+                            <option value="Dark">Dark</option>
+                            <option value="Spooky">Spooky</option>
+                            <option value="Christmas">Christmas</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-lg mt-3">Get a Joke</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
